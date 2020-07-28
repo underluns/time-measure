@@ -1,12 +1,12 @@
-# Template
-Template for ruby gem.
+# Time::Measure
+Measure runtime.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'template'
+gem 'time-measure'
 ```
 
 And then execute:
@@ -15,11 +15,22 @@ And then execute:
 
 Or install it yourself as:
 
-    gem install template
+    gem install time-measure
 
 ## Usage
 
-TODO: Write usage instructions here
+To measure block execution time:
+```ruby
+measure = Time::Measure.new { 'some_code' }
+measure.result   # Block execution result.
+measure.duration # Duration of block execution in seconds.
+```
+or
+```ruby
+result, duration = Time.measure { 'some_code' }
+result   # Block execution result.
+duration # Duration of block execution in seconds.
+```
 
 ## Development and Testing
 
@@ -47,7 +58,7 @@ All checks are run with the following command:
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/moondelorean/gem-template.
+Bug reports and pull requests are welcome on [GitHub](https://github.com/andxors/time-measure).
 
 ## License
 
