@@ -2,8 +2,8 @@ class Time
   class Measure
     module Extension
       # @return [Time::Measure]
-      def measure
-        Time::Measure.new { yield }
+      def measure(&block)
+        Time::Measure.new(&block)
       end
     end
   end
