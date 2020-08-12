@@ -1,6 +1,6 @@
 # Change Log
 
-## X.Y.Z (YYYY-MM-DD)
+## 0.1.2 (2020-08-12)
 
   * Upgrade ruby version.
 
