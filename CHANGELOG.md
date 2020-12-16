@@ -1,5 +1,9 @@
 # Change Log
 
+## X.Y.Z (YYYY-MM-DD)
+
+  * Remove rubocops from dependencies.
+
 ## 0.1.2 (2020-08-12)
 
   * Upgrade ruby version.

@@ -5,13 +5,13 @@ class Time
   class Measure
     # @attr_reader result     [Object] block execution result.
     # @attr_reader start_time [Time]   start block execution.
-    # @attr_reader end_time   [Time]   end of block execution.
+    # @attr_reader end_time   [Time]   end block execution.
     attr_reader :result, :start_time, :end_time
 
     def initialize
-      @start_time = Time.now.utc
+      @start_time = Time.now
       @result     = yield
-      @end_time   = Time.now.utc
+      @end_time   = Time.now
     end
 
     # @return [Float] block execution time in seconds.
