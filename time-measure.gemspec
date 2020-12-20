@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.summary       = 'Measure runtime'
   spec.description   = 'Simple measurement of code execution time'
   spec.authors       = ['Andrey Lun\'s']
-  spec.email         = ['andxors@gmail.com']
-  spec.homepage      = 'https://github.com/andxors/time-measure'
+  spec.email         = ['underluns@gmail.com']
+  spec.homepage      = 'https://github.com/underluns/time-measure'
   spec.license       = 'MIT'
 
   spec.files         = Dir['lib/**/*.rb', 'bin/*', '[A-Z]*']
